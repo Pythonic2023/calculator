@@ -37,19 +37,19 @@ int operate(int num1, char op, int num2){
             break;
         case '-':
             result = num1 - num2;
-            printf("Subtration: %d", result);
+            printf("Subtration: %d\n", result);
             break;
         case '*':
             result = num1 * num2;
-            printf("Multiplication: %d", result );
+            printf("Multiplication: %d\n", result );
             break;
         case '/':
             result = num1 / num2;
-            printf("Division: %d", result );
+            printf("Division: %d\n", result );
             break;
         case '%':
             result = num1 + num2;
-            printf("Remainder: %d", result );
+            printf("Remainder: %d\n", result );
             break;
         default:
             printf("Unable to do operation.\n");
@@ -59,6 +59,10 @@ int operate(int num1, char op, int num2){
 }
 
 int help(){
-    printf("This is the help function");
+    printf("#####################\n");
+    printf("#     Operations    #\n");
+    printf("#     +,-,*,/,%%     #\n");
+    printf("#####################\n");
+
     return 0;
 }
